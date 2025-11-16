@@ -1,0 +1,24 @@
+# Core
+numpy
+pandas
+scikit-learn
+matplotlib
+seaborn
+tqdm
+rich
+pyyaml
+
+# Images & I/O
+Pillow
+opencv-python-headless
+scikit-image
+
+# TensorFlow for Apple Silicon
+tensorflow-macos==2.16.*
+tensorflow-metal
+
+# Visualization / logs
+tensorboard
+
+# Optional helpers
+python-dotenv

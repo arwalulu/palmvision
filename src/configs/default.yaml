@@ -1,0 +1,52 @@
+# Project metadata
+project_name: palmvision
+seed: 42
+framework: tensorflow
+
+# Dataset (swap these to use a different dataset)
+dataset_name: DatePalmDubas
+dirs:
+  raw: data/raw
+  clean: data/clean
+  normalized: data/normalized
+manifests:
+  clean: manifests/manifest_clean.csv
+  normalized: manifests/manifest_normalized.csv
+
+# Classes (folder names define labels)
+classes: ["Bug", "Dubas", "Healthy", "Honey"]
+
+# Preprocessing (stages 1..5 for audit)
+preprocessing:
+  cleaning:
+    enabled: true
+    drop_duplicates_in_class: true
+    drop_cross_class_duplicates: true
+    validate_images: true
+  geometry:
+    enabled: false
+  color:
+    enabled: true
+  resize_scale:
+    enabled: true
+    image_size: 224
+  annotation_labeling:
+    strategy: "folder_name"
+
+# Splits
+splits:
+  val: 0.2
+  test: 0.1
+  stratified: true
+
+# Training defaults
+training:
+  batch_size: 32
+  num_workers: 4
+  epochs: 30
+  lr: 0.0003
+  img_size: 224
+  augment:
+    flip: true
+    rotate_deg: 0        # keep 0 unless we add tensorflow-addons
+    color_jitter: false

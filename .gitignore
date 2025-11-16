@@ -1,0 +1,21 @@
+# Virtual environment
+.venv/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# macOS junk files
+.DS_Store
+
+# Jupyter cache
+*.ipynb_checkpoints/
+
+# Datasets (never commit to GitHub)
+data/raw/
+data/clean/
+data/normalized/
+manifests/*.cache
+
+# Training runs
+experiments/
