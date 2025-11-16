@@ -107,7 +107,7 @@ Artifacts saved automatically:
 
 ---
 
-# 🧾 STEP 5 — Final Test Evaluation (Held-out, never seen before)
+# 🧾 STEP 5 — Final Test Evaluation
 
 Test Accuracy: 86.73%
 Test Loss: 0.4190
