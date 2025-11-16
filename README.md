@@ -6,14 +6,14 @@
 
 ## 📌 Overview
 
-PalmVision is an end-to-end deep learning pipeline for **automatic classification of date-palm leaf conditions**, distinguishing between:
+Deep learning pipeline for **automatic classification of date-palm leaf conditions**, distinguishing between:
 
 - **Bug**
 - **Dubas**
 - **Healthy**
 - **Honey**
 
-The project implements a **fully reproducible, research-grade pipeline** including:
+The project implements:
 
 ✔ Dataset cleaning & validation  
 ✔ EXIF normalization + deterministic preprocessing  
@@ -27,7 +27,7 @@ Dataset Source (Mendeley Data):
 
 ---
 
-# 🧹 STEP 1 — Rigorous Preprocessing Pipeline
+# 🧹 STEP 1 — Preprocessing 
 
 ### ✅ 1. Raw dataset analysis
 - 3000 raw candidate images scanned.
@@ -121,28 +121,12 @@ Test Loss: 0.4190
 | Healthy | **0.981** |
 | Honey   | 0.829 |
 
-Healthy is easiest to classify; Dubas the hardest (expected in orchard datasets).
+Healthy is easiest to classify; Dubas the hardest.
 
 ### Saved evaluation artifacts
 - **Confusion Matrix**: `test_confusion_matrix.png`
 - **Classification Report**: `test_classification_report.txt`
 - **JSON Metrics**: `test_metrics.json`
-
----
-
-# 📈 Why This Project Is AI-Specialist Level
-
-🔹 Fully reproducible ML pipeline  
-🔹 Correct dataset validation & cleaning  
-🔹 EXIF-correct normalization (commonly overlooked)  
-🔹 Stratified splitting done properly  
-🔹 Custom EfficientNetB0 + CBAM architecture  
-🔹 Professional callbacks (LR scheduler, checkpointing, early stopping)  
-🔹 Test-only evaluation  
-🔹 Organized experiment logging  
-🔹 Modular code structure following best practices  
-
-This setup mirrors real AI production pipelines.
 
 ---
 
