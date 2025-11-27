@@ -132,13 +132,13 @@ Healthy is easiest to classify; Dubas the hardest.
 ## Final Test Evaluation
 
 ### Test Accuracy  
-![Test Accuracy](assets/test_accuracy.png)
+![Test Accuracy](test_accuracy.png)
 
 ### Confusion Matrix  
-![Confusion Matrix](assets/test_confusion_matrix.png)
+![Confusion Matrix](test_confusion_matrix.png)
 
 ### Sample Prediction Grid  
-![Sample Predictions](assets/test_sample_grid.jpg)
+![Sample Predictions](test_sample_grid.jpg)
 
 ---
 
