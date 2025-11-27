@@ -129,15 +129,15 @@ Healthy is easiest to classify; Dubas the hardest.
 - **JSON Metrics**: `test_metrics.json`
 
 ---
-## Final Test Evaluation
-### Test accuracy 
-![Confusion Matrix](assets/Test accuracy.png)
+### Test Accuracy  
+![Test Accuracy](assets/test_accuracy.png)
 
 ### Confusion Matrix  
 ![Confusion Matrix](assets/test_confusion_matrix.png)
 
 ### Sample Prediction Grid  
-![Sample Predictions on Test Batch](assets/sample_predictions_grid.jpg)
+![Sample Predictions](assets/sample_prediction_grid.jpg)
+
 ---
 
 # ▶️ Running the Project
